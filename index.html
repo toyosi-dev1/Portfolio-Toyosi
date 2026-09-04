@@ -10,9 +10,10 @@
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+<a class="skip-link" href="#main-content">Skip to content</a>
 
 <header>
-  <nav class="wrap">
+  <nav class="wrap" aria-label="Primary navigation">
     <div class="logo"><span class="dot"></span>Toyosi</div>
     <div class="navlinks">
       <a href="#work">#work</a>
@@ -24,13 +25,14 @@
   </nav>
 </header>
 
+<main id="main-content">
 <section class="hero">
   <span class="dots"></span>
   <span class="frame-mark fm1"></span>
   <span class="frame-mark fm2"></span>
   <div class="wrap">
     <div class="eyebrow-row">
-      <span class="status-dot"></span> Front-end + AI campaign work
+      <span class="status-dot"></span> Currently exploring — front-end + AI campaign work
     </div>
     <div class="hero-grid">
       <div>
@@ -42,11 +44,11 @@
         </div>
       </div>
       <div class="hero-visual">
-        <svg viewBox="0 0 200 200" fill="none">
-          <circle cx="100" cy="100" r="70" stroke="#9b7bf7" stroke-width="1" opacity="0.5"/>
-          <circle cx="100" cy="100" r="46" stroke="#c77bd6" stroke-width="1" opacity="0.4"/>
-          <rect x="60" y="60" width="80" height="80" stroke="#6b5aa8" stroke-width="1" opacity="0.6" transform="rotate(18 100 100)"/>
-          <rect x="76" y="76" width="48" height="48" stroke="#9b7bf7" stroke-width="1"/>
+        <svg class="accent-art" viewBox="0 0 200 200" fill="none" aria-hidden="true" focusable="false">
+          <circle cx="100" cy="100" r="70" stroke="currentColor" stroke-width="1" opacity="0.5"/>
+          <circle cx="100" cy="100" r="46" stroke="#d6a06f" stroke-width="1" opacity="0.4"/>
+          <rect x="60" y="60" width="80" height="80" stroke="#8f5731" stroke-width="1" opacity="0.6" transform="rotate(18 100 100)"/>
+          <rect x="76" y="76" width="48" height="48" stroke="currentColor" stroke-width="1"/>
           <line x1="10" y1="100" x2="190" y2="100" stroke="#232329" stroke-width="1"/>
           <line x1="100" y1="10" x2="100" y2="190" stroke="#232329" stroke-width="1"/>
         </svg>
@@ -63,8 +65,8 @@
   <span class="dots"></span>
   <span class="frame-mark"></span>
   <div class="manifesto-box reveal">
-    <p class="manifesto-text">If at first you don’t succeed,<br> then skydiving isn’t for you.</p>
-    <p class="manifesto-sig">— Steven wright</p>
+    <p class="manifesto-text">With great prompts comes<br>great creative responsibility.</p>
+    <p class="manifesto-sig">— AI Visual Designer</p>
   </div>
 </section>
 
@@ -187,10 +189,10 @@
         <a class="btn btn-ghost" href="#contact" style="margin-top:8px;">Get in touch</a>
       </div>
       <div class="about-visual">
-        <svg viewBox="0 0 200 200" fill="none">
-          <rect x="40" y="40" width="120" height="120" stroke="#9b7bf7" stroke-width="1" opacity="0.5"/>
-          <rect x="60" y="60" width="80" height="80" stroke="#c77bd6" stroke-width="1" opacity="0.6" transform="rotate(12 100 100)"/>
-          <circle cx="100" cy="100" r="30" stroke="#6b5aa8" stroke-width="1"/>
+        <svg class="accent-art" viewBox="0 0 200 200" fill="none" aria-hidden="true" focusable="false">
+          <rect x="40" y="40" width="120" height="120" stroke="currentColor" stroke-width="1" opacity="0.5"/>
+          <rect x="60" y="60" width="80" height="80" stroke="#d6a06f" stroke-width="1" opacity="0.6" transform="rotate(12 100 100)"/>
+          <circle cx="100" cy="100" r="30" stroke="#8f5731" stroke-width="1"/>
         </svg>
       </div>
     </div>
@@ -237,26 +239,24 @@
       <h2>Have an idea?<br>Let's make it visible.</h2>
       <p class="lead">I'm always interested in ambitious creative projects, experimental ideas, and collaborations at the intersection of design and technology.</p>
       <div class="contact-cards">
-        <a class="ccard" href="https://www.behance.net/kudiratlawal" target="_blank" rel="noopener">
+        <a class="ccard" href="https://www.behance.net/kudiratlawal" target="_blank" rel="noopener noreferrer">
           <div class="k">Behance</div>
           <div class="v">kudiratlawal</div>
         </a>
-        <a class="ccard" href="https://github.com/toyosi-dev1" target="_blank" rel="noopener">
+        <a class="ccard" href="https://github.com/toyosi-dev1" target="_blank" rel="noopener noreferrer">
           <div class="k">GitHub</div>
           <div class="v">toyosi-dev1</div>
         </a>
-<a
-  class="ccard"
-  href="mailto:kudiratlawal1000@gmail.com"
-  onclick="copyEmail(event)"
->
+        <a class="ccard" href="#" onclick="return false;">
           <div class="k">Email</div>
-          <div class="v">Send email ;) </div>
+          <div class="v">add your email</div>
         </a>
       </div>
     </div>
   </div>
 </section>
+
+</main>
 
 <footer class="wrap">
   <span>© 2026 Toyosi — AI Visual Designer &amp; Front-End Designer</span>
